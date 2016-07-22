@@ -2,6 +2,7 @@
 .tutorial-image{
     max-width: 800px;
 }
+
 .text-center {
     text-align: center;
 }
@@ -211,6 +212,7 @@ button.main-nav-button{
 
 .tag-line {
     color: white;
+    margin: 10px;
 }
 
 .mainLogo{
@@ -401,4 +403,29 @@ pre {
 .jsf {
     line-height: 1.0;
     max-width:800px;
+}
+
+.feature-highlight-box {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-highlight-box.reverse {
+    flex-direction: row-reverse;
+}
+
+@media all and (max-width: 780px) {
+    .editor-demo {
+        display:none;
+    }
+    .feature-highlight-box {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .feature-highlight-box.reverse {
+        flex-direction: column;
+    }
 }
