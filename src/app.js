@@ -215,37 +215,28 @@ DynamicData.uiSchema = {
 
 // CSS
 require('angular-material/angular-material.min.css');
-require('jsonforms/dist/jsonforms.css');
-require('jsonforms/dist/jsonforms-material.css');
-require('prismjs/themes/prism.css');
 require('../css/main.css');
 require('../css/syntax.css');
 
 // Libs
-
-require('bootstrap');
-require('jsonforms');
-require('jsonforms/material/jsonforms-material');
-require('jsonforms/dist/ts-build/examples/jsonforms-examples');
+require('angular');
 require('angular-animate');
 require('angular-aria');
 require('angular-material');
-require('angular-ui-bootstrap');
 require('angular-ui-router');
-require('angular-ui-ace');
-require('prismjs');
-require('prismjs/components/prism-typescript');
+
+require('oclazyload');
+require('./examples/examples.routing');
+require('./docs/docs.routing');
+
 angular.module('jsonforms-website', [
     'ngAnimate',
     'ngAria',
     'ngMaterial',
-    'ui.ace',
-    'ui.bootstrap',
     'ui.router',
-    'jsonforms',
-    'jsonforms-material',
-    'jsonforms-examples',
-    'listing'
+    'oc.lazyLoad',
+    'docs.routing',
+    'examples.routing'
 ]).directive('mainMenu', function() {
     return {
         restrict: 'E',
@@ -260,100 +251,19 @@ angular.module('jsonforms-website', [
             };
         }
     };
-}).directive('docsMenu', ['$anchorScroll', function($anchorScroll) {
-    return {
-        restrict: 'E',
-        template: require('../partials/docs/docs_menu.html'),
-        link: function (scope) {
-            scope.showDocsNav = false;
-            scope.toggleDocsMenu = function () {
-                scope.showDocsNav = !scope.showDocsNav;
-            };
-            scope.hideDocsMenu = function () {
-                scope.showDocsNav = false;
-                $anchorScroll();
-            };
-        }
-    };
-}]).directive('examplesMenu', ['$anchorScroll', function($anchorScroll) {
-    return {
-        restrict: 'E',
-        template: require('../partials/examples/examples_menu.html'),
-        link: function (scope) {
-            scope.showDocsNav = false;
-            scope.toggleDocsMenu = function () {
-                scope.showDocsNav = !scope.showDocsNav;
-            };
-            // TODO: rename
-            scope.hideDocsMenu = function () {
-                scope.showDocsNav = false;
-                $anchorScroll()
-            };
-        }
-    };
-}]).directive('supportPanel', function() {
+}).directive('supportPanel', function() {
     return {
         restrict: 'E',
         template: require('../partials/docs/support_panel.html')
     };
 }).config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
-      $urlRouterProvider.when("/docs", "/docs/landing");
-      $urlRouterProvider.when("/examples", "/examples/person");
         $stateProvider
             .state('/', {
                 url: '/',
                 template: require('../partials/landing.html'),
                 controller: 'IndexController',
                 controllerAs: 'vm'
-            })
-            .state('docs', {
-                url: '/docs',
-                template: require('../partials/docs.html')
-            })
-            .state('docs.landing', {
-                url: '/landing',
-                template: require('../partials/docs/landing.html')
-            })
-            .state('docs.introduction', {
-                url: '/introduction',
-                template: require('../_site/partials/docs/introduction.html')
-            })
-            .state('docs.quickstart', {
-                url: '/quickstart',
-                template: require('../_site/partials/docs/quickstart.html')
-            })
-            .state('docs.jsonformseditor', {
-                url: '/jsonformseditor',
-                template: require('../_site/partials/docs/jsonformseditor.html')
-            })
-            .state('docs.setup', {
-                url: '/setup',
-                template: require('../_site/partials/docs/setup.html')
-            })
-            .state('docs.firstform', {
-                url: '/firstform',
-                template: require('../_site/partials/docs/firstform.html')
-            })
-            .state('docs.customrenderer', {
-                url: '/customrenderer',
-                template: require('../_site/partials/docs/customrenderer.html')
-            })
-            .state('docs.customrenderer-es5', {
-                url: '/customrenderer-es5',
-                template: require('../_site/partials/docs/customrenderer-es5.html')
-            })
-            .state('docs.customrenderer-es6', {
-                url: '/customrenderer-es6',
-                template: require('../_site/partials/docs/customrenderer-es6.html')
-            })
-            .state('docs.customrenderer-ts', {
-                url: '/customrenderer-ts',
-                template: require('../_site/partials/docs/customrenderer-ts.html')
-            })
-            .state('docs.uischema', {
-                url: '/uischema',
-                template: require('../_site/partials/docs/uischema.html')
             })
             .state('support', {
                 url: '/support',
@@ -364,86 +274,6 @@ angular.module('jsonforms-website', [
             .state('imprint', {
                 url: '/imprint',
                 template: require('../partials/imprint.html')
-            })
-            //
-            // Example states --
-            //
-            .state('examples', {
-                url: '/examples',
-                template: require('../partials/examples.html'),
-                controllerAs: 'vm'
-            })
-            .state('examples.person', {
-                url: '/person',
-                template: require('../partials/examples/person.html'),
-                controller: 'PersonController',
-                controllerAs: 'vm'
-            })
-            .state('examples.async', {
-                url: '/async',
-                template: require('../partials/examples/async.html'),
-                controller: 'AsyncController',
-                controllerAs: 'vm'
-            })
-            .state('examples.remote-ref', {
-                url: '/remote-ref',
-                template: require('../partials/examples/remote-ref.html'),
-                controller: 'RemoteRefController',
-                controllerAs: 'vm'
-            })
-            .state('examples.arrays', {
-                url: '/arrays',
-                template: require('../partials/examples/arrays.html'),
-                controller: 'ArraysController',
-                controllerAs: 'vm'
-            })
-            .state('examples.categories', {
-                url: '/categories',
-                template: require('../partials/examples/categories.html'),
-                controller: 'CategoriesController',
-                controllerAs: 'vm'
-            })
-            .state('examples.masterdetail', {
-                url: '/masterdetail',
-                template: require('../partials/examples/masterdetail.html'),
-                controller: 'MasterDetailController',
-                controllerAs: 'vm'
-            })
-            .state('examples.rule', {
-                url: '/rule',
-                template: require('../partials/examples/rule.html'),
-                controller: 'RuleController',
-                controllerAs: 'vm'
-            })
-            .state('examples.layouts', {
-                url: '/layouts',
-                template: require('../partials/examples/layouts.html'),
-                controller: 'LayoutsController',
-                controllerAs: 'vm'
-            })
-            .state('examples.live-edit', {
-                url: '/live-edit',
-                template: require('../partials/examples/live-edit.html'),
-                controller: 'LiveEditController',
-                controllerAs: 'vm'
-            })
-            .state('examples.generate-ui', {
-                url: '/generate-ui',
-                template: require('../partials/examples/generate-ui.html'),
-                controller: 'GenerateUiSchemaController',
-                controllerAs: 'vm'
-            })
-            .state('examples.generate-schema', {
-                url: '/generate-schema',
-                template: require('../partials/examples/generate-schema.html'),
-                controller: 'GenerateSchemaController',
-                controllerAs: 'vm'
-            })
-            .state('examples.custom-control', {
-                url: '/custom-control',
-                template: require('../partials/examples/custom-control.html'),
-                controller: 'CustomControlController',
-                controllerAs: 'vm'
             });
         $urlRouterProvider.otherwise('/');
     }
@@ -569,23 +399,4 @@ angular.module('jsonforms-website', [
 }]);
 
 // Our code
-require('./listing/listing.controller');
-require('./listing/listing.directive');
-require('./docs/uischema/uischema.controller');
-require('./docs/customrenderer/rating.control');
-require('./docs/customrenderer/rating.controller');
-require('./docs/customrenderer/schema.value');
-require('./docs/customrenderer/uischema.value');
-require('./examples/person.controller');
-require('./examples/async.controller');
-require('./examples/remote-ref.controller');
-require('./examples/arrays.controller');
-require('./examples/categories.controller');
-require('./examples/masterdetail.controller');
-require('./examples/rule.controller');
-require('./examples/layouts.controller');
-require('./examples/live-edit.controller');
-require('./examples/generate-ui.controller');
-require('./examples/generate-schema.controller');
-require('./examples/custom.controller');
 require('./support/support.controller');
