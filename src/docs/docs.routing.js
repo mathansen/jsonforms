@@ -1,8 +1,7 @@
 'use strict';
 
-require('./docs.menudirective');
 
-function docsRouting($urlRouterProvider, $stateProvider) {
+function docsRouting($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.when("/docs", "/docs/landing");
     $urlRouterProvider.otherwise('/docs');
 
@@ -78,4 +77,4 @@ function docsRouting($urlRouterProvider, $stateProvider) {
         });
 }
 
-angular.module('docs.routing', ['docs.menudirective']).config(docsRouting);
+module.exports = docsRouting;

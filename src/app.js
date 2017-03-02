@@ -227,16 +227,23 @@ require('angular-ui-router');
 
 require('oclazyload');
 require('./examples/examples.routing');
-require('./docs/docs.routing');
+require('./docs/docs.menudirective');
 
-angular.module('jsonforms-website', [
-    'ngAnimate',
-    'ngAria',
-    'ngMaterial',
-    'ui.router',
-    'oc.lazyLoad',
-    'docs.routing',
-    'examples.routing'
+// angular.module('core-deps', ['ui.router'])
+//
+// angular.module('docs.routing', ['core-deps', 'docs.menudirective', 'ui.router'])
+//     .config(['$urlRouterProvider, $stateProvider', require('./docs/docs.routing')]);
+
+angular
+    .module('jsonforms-website', [
+        'ngAnimate',
+        'ngAria',
+        'ngMaterial',
+        'ui.router',
+        'oc.lazyLoad',
+        // 'docs.routing',
+        'docs.menudirective',
+        'examples.routing'
 ]).directive('mainMenu', function() {
     return {
         restrict: 'E',
@@ -251,12 +258,15 @@ angular.module('jsonforms-website', [
             };
         }
     };
-}).directive('supportPanel', function() {
+})
+    .directive('supportPanel', function() {
     return {
         restrict: 'E',
         template: require('../partials/docs/support_panel.html')
     };
-}).config(['$stateProvider', '$urlRouterProvider',
+})
+    .config(['$stateProvider', '$urlRouterProvider', require('./docs/docs.routing')])
+    .config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('/', {
