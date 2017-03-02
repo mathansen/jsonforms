@@ -228,11 +228,8 @@ require('angular-ui-router');
 require('oclazyload');
 require('./examples/examples.routing');
 require('./docs/docs.menudirective');
+require('./examples/examples.menudirective');
 
-// angular.module('core-deps', ['ui.router'])
-//
-// angular.module('docs.routing', ['core-deps', 'docs.menudirective', 'ui.router'])
-//     .config(['$urlRouterProvider, $stateProvider', require('./docs/docs.routing')]);
 
 angular
     .module('jsonforms-website', [
@@ -243,7 +240,8 @@ angular
         'oc.lazyLoad',
         // 'docs.routing',
         'docs.menudirective',
-        'examples.routing'
+        'examples.menudirective'
+        // 'examples.routing'
 ]).directive('mainMenu', function() {
     return {
         restrict: 'E',
@@ -266,6 +264,7 @@ angular
     };
 })
     .config(['$stateProvider', '$urlRouterProvider', require('./docs/docs.routing')])
+    .config(['$stateProvider', '$urlRouterProvider', require('./examples/examples.routing')])
     .config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
         $stateProvider

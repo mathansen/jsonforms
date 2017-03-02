@@ -1,8 +1,8 @@
 'use strict';
 
-require('./examples.menudirective');
+// require('./examples.menudirective');
 
-function examplesRouting($urlRouterProvider, $stateProvider) {
+function examplesRouting($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.when("/examples", "/examples/person");
     $urlRouterProvider.otherwise('/examples');
 
@@ -120,4 +120,5 @@ function examplesRouting($urlRouterProvider, $stateProvider) {
         });
 }
 
-angular.module('examples.routing', ['examples.menudirective']).config(examplesRouting);
+module.exports = examplesRouting;
+// angular.module('examples.routing', ['examples.menudirective']).config(examplesRouting);

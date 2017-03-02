@@ -1,5 +1,5 @@
-webpackJsonp([2],Array(47).concat([
-/* 47 */
+webpackJsonp([2],Array(45).concat([
+/* 45 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -787,7 +787,7 @@ webpackJsonp([2],Array(47).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 48 */
+/* 46 */
 /***/ function(module, exports) {
 
 	Prism.languages.typescript = Prism.languages.extend('javascript', {
@@ -796,13 +796,13 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 49 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(50);
+	var content = __webpack_require__(48);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -822,7 +822,7 @@ webpackJsonp([2],Array(47).concat([
 	}
 
 /***/ },
-/* 50 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -831,6 +831,46 @@ webpackJsonp([2],Array(47).concat([
 	
 	// module
 	exports.push([module.id, "/**\n * prism.js default theme for JavaScript, CSS and HTML\n * Based on dabblet (http://dabblet.com)\n * @author Lea Verou\n */\n\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n\tcolor: black;\n\tbackground: none;\n\ttext-shadow: 0 1px white;\n\tfont-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;\n\ttext-align: left;\n\twhite-space: pre;\n\tword-spacing: normal;\n\tword-break: normal;\n\tword-wrap: normal;\n\tline-height: 1.5;\n\n\t-moz-tab-size: 4;\n\t-o-tab-size: 4;\n\ttab-size: 4;\n\n\t-webkit-hyphens: none;\n\t-moz-hyphens: none;\n\t-ms-hyphens: none;\n\thyphens: none;\n}\n\npre[class*=\"language-\"]::-moz-selection, pre[class*=\"language-\"] ::-moz-selection,\ncode[class*=\"language-\"]::-moz-selection, code[class*=\"language-\"] ::-moz-selection {\n\ttext-shadow: none;\n\tbackground: #b3d4fc;\n}\n\npre[class*=\"language-\"]::selection, pre[class*=\"language-\"] ::selection,\ncode[class*=\"language-\"]::selection, code[class*=\"language-\"] ::selection {\n\ttext-shadow: none;\n\tbackground: #b3d4fc;\n}\n\n@media print {\n\tcode[class*=\"language-\"],\n\tpre[class*=\"language-\"] {\n\t\ttext-shadow: none;\n\t}\n}\n\n/* Code blocks */\npre[class*=\"language-\"] {\n\tpadding: 1em;\n\tmargin: .5em 0;\n\toverflow: auto;\n}\n\n:not(pre) > code[class*=\"language-\"],\npre[class*=\"language-\"] {\n\tbackground: #f5f2f0;\n}\n\n/* Inline code */\n:not(pre) > code[class*=\"language-\"] {\n\tpadding: .1em;\n\tborder-radius: .3em;\n\twhite-space: normal;\n}\n\n.token.comment,\n.token.prolog,\n.token.doctype,\n.token.cdata {\n\tcolor: slategray;\n}\n\n.token.punctuation {\n\tcolor: #999;\n}\n\n.namespace {\n\topacity: .7;\n}\n\n.token.property,\n.token.tag,\n.token.boolean,\n.token.number,\n.token.constant,\n.token.symbol,\n.token.deleted {\n\tcolor: #905;\n}\n\n.token.selector,\n.token.attr-name,\n.token.string,\n.token.char,\n.token.builtin,\n.token.inserted {\n\tcolor: #690;\n}\n\n.token.operator,\n.token.entity,\n.token.url,\n.language-css .token.string,\n.style .token.string {\n\tcolor: #a67f59;\n\tbackground: hsla(0, 0%, 100%, .5);\n}\n\n.token.atrule,\n.token.attr-value,\n.token.keyword {\n\tcolor: #07a;\n}\n\n.token.function {\n\tcolor: #DD4A68;\n}\n\n.token.regex,\n.token.important,\n.token.variable {\n\tcolor: #e90;\n}\n\n.token.important,\n.token.bold {\n\tfont-weight: bold;\n}\n.token.italic {\n\tfont-style: italic;\n}\n\n.token.entity {\n\tcursor: help;\n}\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(50);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(5)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../css-loader/index.js!./jsonforms.css", function() {
+				var newContent = require("!!../../css-loader/index.js!./jsonforms.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".jsf-alert {\n  color: #a94442;\n}\n\n.jsf legend {\n  margin-bottom: 0.15em;\n  width: inherit;\n  padding: 0 0.5em;\n  border-bottom:none;\n}\n\n.jsf fieldset {\n  border: 1px solid #ccc !important;\n  border-radius: 4px;\n  /*padding: 0 1.4em 1.4em 1.4em !important;*/\n  padding: 0 1em;\n  margin: 0 0 1.5em 0 !important;\n}\n.jsf-control .form-control {\n  flex: 1;\n  height: 1.5em;\n  padding: 1px 0px;\n}\n.jsf-control select.form-control {\n  box-sizing: content-box;\n  padding: 2px 0px;\n}\n\n.jsf-control-array-container {\n  display: flex;\n  margin-left: -0.5em;\n  margin-right: -0.5em;\n}\n.jsf-control-array-element {\n  flex: 1 0 auto;\n  padding-left: 0.5em;\n  padding-right: 0.5em;\n}\n.jsf-control-array-element-delete {\n  flex: 0 1 auto;\n  padding-top: 1.2em;\n  padding-left: 0.5em;\n  padding-right: 0.5em;\n}\n\n.jsf-control-boolean {\n  align-self: center;\n  min-height: 1.5em;\n  min-width: 1.5em;\n  margin: 0;\n}\narray-control fieldset > div > div {\n  margin-bottom: 0.5em;\n}\n.jsf-categorization {\n  display: flex;\n  border: 1px solid;\n}\n.jsf-categorization>div {\n  margin:0.25em;\n  min-width: 2em;\n  border: 1px solid;\n  padding: 0.5em;\n}\n.jsf-categorization>.jsf-categorization-master{\n  flex:3 1 0.3vw;\n}\n.jsf-categorization>.jsf-categorization-detail{\n  flex:7 1 0.7vw;\n}\n.jsf-categorization .jsf-categorization-master ul {\n  list-style-type: none;\n  cursor: default;\n  padding: 0;\n  margin: 0;\n}\n.jsf-categorization .jsf-categorization-master li.closed,\n.jsf-categorization .jsf-categorization-master li.expanded {\n  border: 1px solid #ddd;\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry {\n  display: flex;\n  flex-direction: row;\n}\n.jsf-categorization .jsf-categorization-master li.closed > .jsf-category-entry,\n.jsf-categorization .jsf-categorization-master li.expanded > .jsf-category-entry {\n  background-color: #f5f5f5;\n}\n.jsf-categorization .jsf-categorization-master li.expanded > .jsf-category-entry{\n  border-bottom: 1px solid #ddd;\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry > .jsf-category-expand {\n  flex-basis: 1em;\n  flex-grow: 0;\n  flex-shrink: 0;\n}\n.jsf-categorization .jsf-categorization-master li.closed > .jsf-category-entry > .jsf-category-label::after{\n  content: \"+\"\n}\n.jsf-categorization .jsf-categorization-master li.expanded > .jsf-category-entry > .jsf-category-label::after{\n  content: \"-\"\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry > .jsf-category-label{\n  flex:1;\n  padding-left: 0.5em;\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry > .jsf-category-label:hover,\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry > .jsf-category-label.selected{\n  background-color: lightgrey;\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-subcategories {\n  margin-left: 1em;\n}\n\n\n.jsf-vertical-layout-container>div{margin-top: 0.5em}\n.jsf-vertical-layout-container>div:first-child{margin-top: 0}\n.jsf-group { }\n.jsf-horizontal-layout > .jsf-horizontal-layout-container {\n  margin: 0;\n  display: flex;\n  justify-content: space-between;\n}\n.jsf-horizontal-layout > .jsf-horizontal-layout-container > div {\n  flex:1;\n  margin:0 0.5em;\n  min-width: 2em;\n}\n.jsf-horizontal-layout > .jsf-horizontal-layout-container > div:first-child {\n  margin-left: 0;\n}\n.jsf-horizontal-layout > .jsf-horizontal-layout-container > div:last-child {\n  margin-right: 0;\n}\n.jsf-masterdetail {\n  display: flex;\n}\n.jsf-masterdetail>div{\n  margin:0.25em;\n  min-width: 2em;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\n.jsf-masterdetail>.jsf-masterdetail-master{\n  flex:3 1 0.3vw;\n}\n.jsf-masterdetail>.jsf-masterdetail-detail{\n  flex:7 1 0.7vw;\n  padding: 0.5em;\n}\n.jsf-masterdetail>.jsf-masterdetail-master jsonforms-masterdetail-collection {\n    flex: 1;\n}\n.jsf-masterdetail .jsf-masterdetail-master jsonforms-masterdetail-collection > div > ul {\n    margin-left: 0;\n}\n.jsf-masterdetail ul {\n    list-style-type: none;\n    cursor: default;\n    padding: 0;\n    margin: 0;\n    margin-left: 1em;\n    flex: 1;\n}\n.jsf-masterdetail .jsf-masterdetail-entries > li {\n    line-height: 1em;\n    padding-top:0.1em;\n}\n.jsf-masterdetail .jsf-masterdetail-entries > li > div{\n    display: flex;\n}\n.jsf-masterdetail .jsf-masterdetail-entries > li > div > i{\n    flex-basis: 1em;\n    flex-grow: 0;\n    flex-shrink: 0;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry-icon{\n    flex-basis: 1.25em;\n    flex-grow: 0;\n    flex-shrink: 0;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry{\n    display: inline-block;\n    padding: 0em;\n    flex: 1;\n    padding-left: 0.25em;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry .jsf-masterdetail-entry-add,\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry .jsf-masterdetail-entry-remove {\n    display: none;\n    width:1em;\n    text-align: center;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover .jsf-masterdetail-entry-add,\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover .jsf-masterdetail-entry-remove {\n    display: inline-block;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover,\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry-selected{\n    background-color: lightgrey;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover .jsf-masterdetail-entry-add:hover,\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover .jsf-masterdetail-entry-remove:hover,\n.jsf-masterdetail .jsf-masterdetail-addRoot:hover {\n  background-color: grey;\n}\n.jsf-masterdetail .jsf-masterdetail-master .chevron-right:after{\n  content:\"\\25B6\"\n}\n.jsf-masterdetail .jsf-masterdetail-master .chevron-down:after{\n  content:\"\\25BC\"\n}\n.jsf-masterdetail .jsf-masterdetail-master .chevron-placeholder:after{\n  content:\"\\A0\"\n}\n.jsf-masterdetail .jsf-masterdetail-addRoot {\n  display: flex;\n  justify-content: center;\n  border-bottom: 1px solid;\n}\n.jsf-masterdetail .selectKeyForAdd {\n    position:fixed;\n    top:0;\n    left:0;\n    background:rgba(0,0,0,0.6);\n    z-index:5;\n}\n.jsf-masterdetail .selectKeyForAdd>div{\n    background-color: white;\n    color: black;\n    z-index:10;\n    position: absolute;\n    border : 1px solid;\n    padding: 0.25em;\n    display: flex;\n    flex-direction: column;\n    align-items: stretch;\n    align-content: stretch;\n}\n.jsf-masterdetail .selectKeyForAdd ul {\n    margin: 0;\n}\n.jsf-masterdetail .selectKeyForAdd li:hover,\n.jsf-masterdetail .selectKeyForAdd >div>span:hover {\n    background-color: lightgray;\n}\n.jsf-masterdetail .jsf-masterdetail-addRoot:hover {\n  background-color: lightgray;\n}\n.jsf-masterdetail span {\n  cursor: pointer;\n}\n.jsf .array-empty {\n  font-style: italic;\n  margin-bottom: 0.5em;\n}", ""]);
 	
 	// exports
 
@@ -851,8 +891,8 @@ webpackJsonp([2],Array(47).concat([
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../css-loader/index.js!./jsonforms.css", function() {
-				var newContent = require("!!../../css-loader/index.js!./jsonforms.css");
+			module.hot.accept("!!../../css-loader/index.js!./jsonforms-material.css", function() {
+				var newContent = require("!!../../css-loader/index.js!./jsonforms-material.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -870,7 +910,7 @@ webpackJsonp([2],Array(47).concat([
 	
 	
 	// module
-	exports.push([module.id, ".jsf-alert {\n  color: #a94442;\n}\n\n.jsf legend {\n  margin-bottom: 0.15em;\n  width: inherit;\n  padding: 0 0.5em;\n  border-bottom:none;\n}\n\n.jsf fieldset {\n  border: 1px solid #ccc !important;\n  border-radius: 4px;\n  /*padding: 0 1.4em 1.4em 1.4em !important;*/\n  padding: 0 1em;\n  margin: 0 0 1.5em 0 !important;\n}\n.jsf-control .form-control {\n  flex: 1;\n  height: 1.5em;\n  padding: 1px 0px;\n}\n.jsf-control select.form-control {\n  box-sizing: content-box;\n  padding: 2px 0px;\n}\n\n.jsf-control-array-container {\n  display: flex;\n  margin-left: -0.5em;\n  margin-right: -0.5em;\n}\n.jsf-control-array-element {\n  flex: 1 0 auto;\n  padding-left: 0.5em;\n  padding-right: 0.5em;\n}\n.jsf-control-array-element-delete {\n  flex: 0 1 auto;\n  padding-top: 1.2em;\n  padding-left: 0.5em;\n  padding-right: 0.5em;\n}\n\n.jsf-control-boolean {\n  align-self: center;\n  min-height: 1.5em;\n  min-width: 1.5em;\n  margin: 0;\n}\narray-control fieldset > div > div {\n  margin-bottom: 0.5em;\n}\n.jsf-categorization {\n  display: flex;\n  border: 1px solid;\n}\n.jsf-categorization>div {\n  margin:0.25em;\n  min-width: 2em;\n  border: 1px solid;\n  padding: 0.5em;\n}\n.jsf-categorization>.jsf-categorization-master{\n  flex:3 1 0.3vw;\n}\n.jsf-categorization>.jsf-categorization-detail{\n  flex:7 1 0.7vw;\n}\n.jsf-categorization .jsf-categorization-master ul {\n  list-style-type: none;\n  cursor: default;\n  padding: 0;\n  margin: 0;\n}\n.jsf-categorization .jsf-categorization-master li.closed,\n.jsf-categorization .jsf-categorization-master li.expanded {\n  border: 1px solid #ddd;\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry {\n  display: flex;\n  flex-direction: row;\n}\n.jsf-categorization .jsf-categorization-master li.closed > .jsf-category-entry,\n.jsf-categorization .jsf-categorization-master li.expanded > .jsf-category-entry {\n  background-color: #f5f5f5;\n}\n.jsf-categorization .jsf-categorization-master li.expanded > .jsf-category-entry{\n  border-bottom: 1px solid #ddd;\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry > .jsf-category-expand {\n  flex-basis: 1em;\n  flex-grow: 0;\n  flex-shrink: 0;\n}\n.jsf-categorization .jsf-categorization-master li.closed > .jsf-category-entry > .jsf-category-label::after{\n  content: \"+\"\n}\n.jsf-categorization .jsf-categorization-master li.expanded > .jsf-category-entry > .jsf-category-label::after{\n  content: \"-\"\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry > .jsf-category-label{\n  flex:1;\n  padding-left: 0.5em;\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry > .jsf-category-label:hover,\n.jsf-categorization .jsf-categorization-master li > .jsf-category-entry > .jsf-category-label.selected{\n  background-color: lightgrey;\n}\n.jsf-categorization .jsf-categorization-master li > .jsf-category-subcategories {\n  margin-left: 1em;\n}\n\n\n.jsf-vertical-layout-container>div{margin-top: 0.5em}\n.jsf-vertical-layout-container>div:first-child{margin-top: 0}\n.jsf-group { }\n.jsf-horizontal-layout > .jsf-horizontal-layout-container {\n  margin: 0;\n  display: flex;\n  justify-content: space-between;\n}\n.jsf-horizontal-layout > .jsf-horizontal-layout-container > div {\n  flex:1;\n  margin:0 0.5em;\n  min-width: 2em;\n}\n.jsf-horizontal-layout > .jsf-horizontal-layout-container > div:first-child {\n  margin-left: 0;\n}\n.jsf-horizontal-layout > .jsf-horizontal-layout-container > div:last-child {\n  margin-right: 0;\n}\n.jsf-masterdetail {\n  display: flex;\n}\n.jsf-masterdetail>div{\n  margin:0.25em;\n  min-width: 2em;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\n.jsf-masterdetail>.jsf-masterdetail-master{\n  flex:3 1 0.3vw;\n}\n.jsf-masterdetail>.jsf-masterdetail-detail{\n  flex:7 1 0.7vw;\n  padding: 0.5em;\n}\n.jsf-masterdetail>.jsf-masterdetail-master jsonforms-masterdetail-collection {\n    flex: 1;\n}\n.jsf-masterdetail .jsf-masterdetail-master jsonforms-masterdetail-collection > div > ul {\n    margin-left: 0;\n}\n.jsf-masterdetail ul {\n    list-style-type: none;\n    cursor: default;\n    padding: 0;\n    margin: 0;\n    margin-left: 1em;\n    flex: 1;\n}\n.jsf-masterdetail .jsf-masterdetail-entries > li {\n    line-height: 1em;\n    padding-top:0.1em;\n}\n.jsf-masterdetail .jsf-masterdetail-entries > li > div{\n    display: flex;\n}\n.jsf-masterdetail .jsf-masterdetail-entries > li > div > i{\n    flex-basis: 1em;\n    flex-grow: 0;\n    flex-shrink: 0;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry-icon{\n    flex-basis: 1.25em;\n    flex-grow: 0;\n    flex-shrink: 0;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry{\n    display: inline-block;\n    padding: 0em;\n    flex: 1;\n    padding-left: 0.25em;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry .jsf-masterdetail-entry-add,\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry .jsf-masterdetail-entry-remove {\n    display: none;\n    width:1em;\n    text-align: center;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover .jsf-masterdetail-entry-add,\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover .jsf-masterdetail-entry-remove {\n    display: inline-block;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover,\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry-selected{\n    background-color: lightgrey;\n}\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover .jsf-masterdetail-entry-add:hover,\n.jsf-masterdetail .jsf-masterdetail-master .jsf-masterdetail-entry:hover .jsf-masterdetail-entry-remove:hover,\n.jsf-masterdetail .jsf-masterdetail-addRoot:hover {\n  background-color: grey;\n}\n.jsf-masterdetail .jsf-masterdetail-master .chevron-right:after{\n  content:\"\\25B6\"\n}\n.jsf-masterdetail .jsf-masterdetail-master .chevron-down:after{\n  content:\"\\25BC\"\n}\n.jsf-masterdetail .jsf-masterdetail-master .chevron-placeholder:after{\n  content:\"\\A0\"\n}\n.jsf-masterdetail .jsf-masterdetail-addRoot {\n  display: flex;\n  justify-content: center;\n  border-bottom: 1px solid;\n}\n.jsf-masterdetail .selectKeyForAdd {\n    position:fixed;\n    top:0;\n    left:0;\n    background:rgba(0,0,0,0.6);\n    z-index:5;\n}\n.jsf-masterdetail .selectKeyForAdd>div{\n    background-color: white;\n    color: black;\n    z-index:10;\n    position: absolute;\n    border : 1px solid;\n    padding: 0.25em;\n    display: flex;\n    flex-direction: column;\n    align-items: stretch;\n    align-content: stretch;\n}\n.jsf-masterdetail .selectKeyForAdd ul {\n    margin: 0;\n}\n.jsf-masterdetail .selectKeyForAdd li:hover,\n.jsf-masterdetail .selectKeyForAdd >div>span:hover {\n    background-color: lightgray;\n}\n.jsf-masterdetail .jsf-masterdetail-addRoot:hover {\n  background-color: lightgray;\n}\n.jsf-masterdetail span {\n  cursor: pointer;\n}\n.jsf .array-empty {\n  font-style: italic;\n  margin-bottom: 0.5em;\n}", ""]);
+	exports.push([module.id, "md-input-container {\n    width: 100%;\n    padding-right: 1em;\n}\n\nmd-input-container ng-transclude > md-select {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n    order: 2;\n    display: block;\n    margin-top: 0;\n    background: none;\n    padding-left: 2px;\n    padding-right: 2px;\n    border-width: 0 0 1px 0;\n    line-height: 26px;\n    height: 30px;\n    -ms-flex-preferred-size: 26px;\n    border-radius: 0;\n    border-style: none;\n    width: 100%;\n    box-sizing: border-box;\n    float: left;\n}\nmd-datepicker {\n  display: flex;\n}\nmd-datepicker .md-datepicker-input-container{\n  width: 100%;\n}\nmd-datepicker .md-datepicker-input {\n  max-width: 100%;\n}\n.md-select-value .md-select-icon {\n  margin: 0;\n}\n.jsf-control-array-element {\n    flex: grow;\n}\n.jsf-control-array-element-delete {\n    flex: nogrow;\n}\n/* workaround for https://github.com/angular/material/issues/6214 */\n-.md-errors-spacer:empty {\n  display: none;\n}\n", ""]);
 	
 	// exports
 
@@ -879,64 +919,24 @@ webpackJsonp([2],Array(47).concat([
 /* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(54);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(5)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!../../css-loader/index.js!./jsonforms-material.css", function() {
-				var newContent = require("!!../../css-loader/index.js!./jsonforms-material.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(4)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "md-input-container {\n    width: 100%;\n    padding-right: 1em;\n}\n\nmd-input-container ng-transclude > md-select {\n    -webkit-box-ordinal-group: 3;\n    -webkit-order: 2;\n    order: 2;\n    display: block;\n    margin-top: 0;\n    background: none;\n    padding-left: 2px;\n    padding-right: 2px;\n    border-width: 0 0 1px 0;\n    line-height: 26px;\n    height: 30px;\n    -ms-flex-preferred-size: 26px;\n    border-radius: 0;\n    border-style: none;\n    width: 100%;\n    box-sizing: border-box;\n    float: left;\n}\nmd-datepicker {\n  display: flex;\n}\nmd-datepicker .md-datepicker-input-container{\n  width: 100%;\n}\nmd-datepicker .md-datepicker-input {\n  max-width: 100%;\n}\n.md-select-value .md-select-icon {\n  margin: 0;\n}\n.jsf-control-array-element {\n    flex: grow;\n}\n.jsf-control-array-element-delete {\n    flex: nogrow;\n}\n/* workaround for https://github.com/angular/material/issues/6214 */\n-.md-errors-spacer:empty {\n  display: none;\n}\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 55 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__webpack_require__(56);
-	var form_1 = __webpack_require__(58);
-	var ng_services_1 = __webpack_require__(122);
-	__webpack_require__(125);
+	__webpack_require__(54);
+	var form_1 = __webpack_require__(56);
+	var ng_services_1 = __webpack_require__(120);
+	__webpack_require__(123);
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = angular.module('jsonforms', [
 	    'ui.validate',
 	    form_1.default,
 	    ng_services_1.default
 	]).name;
-	__export(__webpack_require__(119));
-	var abstract_control_1 = __webpack_require__(81);
+	__export(__webpack_require__(117));
+	var abstract_control_1 = __webpack_require__(79);
 	exports.AbstractControl = abstract_control_1.AbstractControl;
-	var testers_1 = __webpack_require__(60);
+	var testers_1 = __webpack_require__(58);
 	exports.Testers = testers_1.Testers;
 	exports.schemaTypeIs = testers_1.schemaTypeIs;
 	exports.schemaTypeMatches = testers_1.schemaTypeMatches;
@@ -945,20 +945,20 @@ webpackJsonp([2],Array(47).concat([
 	exports.uiTypeIs = testers_1.uiTypeIs;
 	exports.optionIs = testers_1.optionIs;
 	exports.always = testers_1.always;
-	var path_resolver_1 = __webpack_require__(61);
+	var path_resolver_1 = __webpack_require__(59);
 	exports.PathResolver = path_resolver_1.PathResolver;
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 56 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(57);
+	__webpack_require__(55);
 	module.exports = angular;
 
 
 /***/ },
-/* 57 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
@@ -31392,38 +31392,38 @@ webpackJsonp([2],Array(47).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14)))
 
 /***/ },
-/* 58 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var angular = __webpack_require__(56);
-	var renderer_service_1 = __webpack_require__(59);
-	var path_resolver_service_1 = __webpack_require__(65);
-	var ui_schema_registry_service_1 = __webpack_require__(66);
-	var data_service_1 = __webpack_require__(67);
-	var generators_1 = __webpack_require__(68);
-	var ui_schema_gen_service_1 = __webpack_require__(69);
-	var schema_gen_service_1 = __webpack_require__(70);
-	var layout_directive_1 = __webpack_require__(71);
-	var control_directive_1 = __webpack_require__(72);
-	var categorization_directive_1 = __webpack_require__(73);
-	var vertical_directive_1 = __webpack_require__(77);
-	var horizontal_directive_1 = __webpack_require__(78);
-	var masterdetail_directives_1 = __webpack_require__(80);
-	var group_directive_1 = __webpack_require__(82);
-	var label_directive_1 = __webpack_require__(83);
-	var string_directive_1 = __webpack_require__(84);
-	var integer_directive_1 = __webpack_require__(85);
-	var number_directive_1 = __webpack_require__(86);
-	var boolean_directive_1 = __webpack_require__(87);
-	var array_directive_1 = __webpack_require__(88);
-	var reference_directive_1 = __webpack_require__(90);
-	var datetime_directive_1 = __webpack_require__(91);
-	var enum_directive_1 = __webpack_require__(92);
-	var form_directive_1 = __webpack_require__(93);
-	var abstract_control_1 = __webpack_require__(81);
-	var testers_1 = __webpack_require__(60);
-	var norenderer_directive_1 = __webpack_require__(121);
+	var angular = __webpack_require__(54);
+	var renderer_service_1 = __webpack_require__(57);
+	var path_resolver_service_1 = __webpack_require__(63);
+	var ui_schema_registry_service_1 = __webpack_require__(64);
+	var data_service_1 = __webpack_require__(65);
+	var generators_1 = __webpack_require__(66);
+	var ui_schema_gen_service_1 = __webpack_require__(67);
+	var schema_gen_service_1 = __webpack_require__(68);
+	var layout_directive_1 = __webpack_require__(69);
+	var control_directive_1 = __webpack_require__(70);
+	var categorization_directive_1 = __webpack_require__(71);
+	var vertical_directive_1 = __webpack_require__(75);
+	var horizontal_directive_1 = __webpack_require__(76);
+	var masterdetail_directives_1 = __webpack_require__(78);
+	var group_directive_1 = __webpack_require__(80);
+	var label_directive_1 = __webpack_require__(81);
+	var string_directive_1 = __webpack_require__(82);
+	var integer_directive_1 = __webpack_require__(83);
+	var number_directive_1 = __webpack_require__(84);
+	var boolean_directive_1 = __webpack_require__(85);
+	var array_directive_1 = __webpack_require__(86);
+	var reference_directive_1 = __webpack_require__(88);
+	var datetime_directive_1 = __webpack_require__(89);
+	var enum_directive_1 = __webpack_require__(90);
+	var form_directive_1 = __webpack_require__(91);
+	var abstract_control_1 = __webpack_require__(79);
+	var testers_1 = __webpack_require__(58);
+	var norenderer_directive_1 = __webpack_require__(119);
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = angular
 	    .module('jsonforms.form', [
@@ -31459,11 +31459,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=form.js.map
 
 /***/ },
-/* 59 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var testers_1 = __webpack_require__(60);
+	var testers_1 = __webpack_require__(58);
 	exports.NOT_FITTING = -1;
 	var RendererServiceImpl = (function () {
 	    function RendererServiceImpl() {
@@ -31492,12 +31492,12 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=renderer.service.js.map
 
 /***/ },
-/* 60 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var path_resolver_1 = __webpack_require__(61);
-	var renderer_service_1 = __webpack_require__(59);
+	var path_resolver_1 = __webpack_require__(59);
+	var renderer_service_1 = __webpack_require__(57);
 	function schemaTypeIs(expected) {
 	    return function (uiSchema, schema, data) {
 	        var schemaPath = uiSchema['scope'] === undefined ? undefined : uiSchema['scope']['$ref'];
@@ -31605,11 +31605,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=testers.js.map
 
 /***/ },
-/* 61 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var pathutil_1 = __webpack_require__(62);
+	var pathutil_1 = __webpack_require__(60);
 	var RefResolver = (function () {
 	    function RefResolver() {
 	    }
@@ -31675,11 +31675,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=path-resolver.js.map
 
 /***/ },
-/* 62 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	__webpack_require__(63);
+	__webpack_require__(61);
 	var PathUtil = (function () {
 	    function PathUtil() {
 	    }
@@ -31733,7 +31733,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=pathutil.js.map
 
 /***/ },
-/* 63 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/**
@@ -46167,10 +46167,10 @@ webpackJsonp([2],Array(47).concat([
 	  }
 	}.call(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(64)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(62)(module), (function() { return this; }())))
 
 /***/ },
-/* 64 */
+/* 62 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -46186,11 +46186,11 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 65 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var path_resolver_1 = __webpack_require__(61);
+	var path_resolver_1 = __webpack_require__(59);
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = angular
 	    .module('jsonforms.service.path-resolver', [])
@@ -46199,7 +46199,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=path-resolver.service.js.map
 
 /***/ },
-/* 66 */
+/* 64 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -46235,11 +46235,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=ui-schema-registry.service.js.map
 
 /***/ },
-/* 67 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var angular = __webpack_require__(56);
+	var angular = __webpack_require__(54);
 	var DataService = (function () {
 	    function DataService() {
 	    }
@@ -46265,7 +46265,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=data.service.js.map
 
 /***/ },
-/* 68 */
+/* 66 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -46274,11 +46274,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=generators.js.map
 
 /***/ },
-/* 69 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var pathutil_1 = __webpack_require__(62);
+	var pathutil_1 = __webpack_require__(60);
 	var UISchemaGenerator = (function () {
 	    function UISchemaGenerator() {
 	        this.addLabel = function (layout, labelName) {
@@ -46377,7 +46377,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=ui-schema-gen.service.js.map
 
 /***/ },
-/* 70 */
+/* 68 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -46492,7 +46492,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=schema-gen.service.js.map
 
 /***/ },
-/* 71 */
+/* 69 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -46514,7 +46514,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=layout.directive.js.map
 
 /***/ },
-/* 72 */
+/* 70 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -46538,7 +46538,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=control.directive.js.map
 
 /***/ },
-/* 73 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -46547,8 +46547,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_layout_1 = __webpack_require__(74);
-	var testers_1 = __webpack_require__(60);
+	var abstract_layout_1 = __webpack_require__(72);
+	var testers_1 = __webpack_require__(58);
 	var CategorizationDirective = (function () {
 	    function CategorizationDirective() {
 	        this.restrict = 'E';
@@ -46594,11 +46594,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=categorization.directive.js.map
 
 /***/ },
-/* 74 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var services_1 = __webpack_require__(75);
+	var services_1 = __webpack_require__(73);
 	var AbstractLayout = (function () {
 	    function AbstractLayout(scope) {
 	        this.scope = scope;
@@ -46614,11 +46614,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=abstract-layout.js.map
 
 /***/ },
-/* 75 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var Ajv = __webpack_require__(76);
+	var Ajv = __webpack_require__(74);
 	var ajv = new Ajv({ allErrors: true, jsonPointers: true });
 	var HashTable = (function () {
 	    function HashTable() {
@@ -46755,7 +46755,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=services.js.map
 
 /***/ },
-/* 76 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var require;var require;/* WEBPACK VAR INJECTION */(function(global) {(function(f){if(true){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Ajv = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -54680,7 +54680,7 @@ webpackJsonp([2],Array(47).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 77 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -54689,8 +54689,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_layout_1 = __webpack_require__(74);
-	var testers_1 = __webpack_require__(60);
+	var abstract_layout_1 = __webpack_require__(72);
+	var testers_1 = __webpack_require__(58);
 	var VerticalDirective = (function () {
 	    function VerticalDirective() {
 	        this.restrict = 'E';
@@ -54724,7 +54724,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=vertical.directive.js.map
 
 /***/ },
-/* 78 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -54733,9 +54733,9 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_layout_1 = __webpack_require__(74);
-	var testers_1 = __webpack_require__(60);
-	var Labels_1 = __webpack_require__(79);
+	var abstract_layout_1 = __webpack_require__(72);
+	var testers_1 = __webpack_require__(58);
+	var Labels_1 = __webpack_require__(77);
 	var HorizontalDirective = (function () {
 	    function HorizontalDirective() {
 	        this.restrict = 'E';
@@ -54784,11 +54784,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=horizontal.directive.js.map
 
 /***/ },
-/* 79 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var pathutil_1 = __webpack_require__(62);
+	var pathutil_1 = __webpack_require__(60);
 	var Labels = (function () {
 	    function Labels() {
 	    }
@@ -54846,7 +54846,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=Labels.js.map
 
 /***/ },
-/* 80 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -54855,9 +54855,9 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var pathutil_1 = __webpack_require__(62);
-	var abstract_control_1 = __webpack_require__(81);
-	var testers_1 = __webpack_require__(60);
+	var pathutil_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var testers_1 = __webpack_require__(58);
 	var MasterDetailDirective = (function () {
 	    function MasterDetailDirective() {
 	        this.restrict = 'E';
@@ -55063,14 +55063,14 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=masterdetail.directives.js.map
 
 /***/ },
-/* 81 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var pathutil_1 = __webpack_require__(62);
-	var path_resolver_1 = __webpack_require__(61);
-	var services_1 = __webpack_require__(75);
-	var Labels_1 = __webpack_require__(79);
+	var pathutil_1 = __webpack_require__(60);
+	var path_resolver_1 = __webpack_require__(59);
+	var services_1 = __webpack_require__(73);
+	var Labels_1 = __webpack_require__(77);
 	var AbstractControl = (function () {
 	    function AbstractControl(scope) {
 	        var _this = this;
@@ -55152,7 +55152,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=abstract-control.js.map
 
 /***/ },
-/* 82 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55161,8 +55161,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_layout_1 = __webpack_require__(74);
-	var testers_1 = __webpack_require__(60);
+	var abstract_layout_1 = __webpack_require__(72);
+	var testers_1 = __webpack_require__(58);
 	var GroupDirective = (function () {
 	    function GroupDirective() {
 	        this.restrict = 'E';
@@ -55203,11 +55203,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=group.directive.js.map
 
 /***/ },
-/* 83 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var testers_1 = __webpack_require__(60);
+	var testers_1 = __webpack_require__(58);
 	var LabelDirective = (function () {
 	    function LabelDirective() {
 	        this.restrict = 'E';
@@ -55244,7 +55244,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=label.directive.js.map
 
 /***/ },
-/* 84 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55253,8 +55253,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_control_1 = __webpack_require__(81);
-	var testers_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var testers_1 = __webpack_require__(58);
 	var stringTemplate = "<jsonforms-control>\n  <input type=\"text\"\n         id=\"{{vm.id}}\"\n         class=\"form-control jsf-control-string\"\n         ng-model=\"vm.resolvedData[vm.fragment]\"\n         ng-change='vm.triggerChangeEvent()'\n         ng-readonly=\"vm.uiSchema.readOnly\"/>\n</jsonforms-control>";
 	var StringDirective = (function () {
 	    function StringDirective() {
@@ -55301,7 +55301,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=string.directive.js.map
 
 /***/ },
-/* 85 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55310,8 +55310,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_control_1 = __webpack_require__(81);
-	var testers_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var testers_1 = __webpack_require__(58);
 	var integerTemplate = "<jsonforms-control>\n      <input type=\"number\" \n             step=\"1\" \n             id=\"{{vm.id}}\" \n             class=\"form-control jsf-control-integer\" \n             ng-model=\"vm.resolvedData[vm.fragment]\" \n             ng-change='vm.triggerChangeEvent()' \n             ng-readonly=\"vm.uiSchema.readOnly\"/>\n    </jsonforms-control>";
 	var IntegerDirective = (function () {
 	    function IntegerDirective() {
@@ -55344,7 +55344,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=integer.directive.js.map
 
 /***/ },
-/* 86 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55353,8 +55353,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_control_1 = __webpack_require__(81);
-	var testers_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var testers_1 = __webpack_require__(58);
 	var numberTemplate = "<jsonforms-control>\n      <input type=\"number\" \n             step=\"0.01\" \n             id=\"{{vm.id}}\" \n             class=\"form-control jsf-control-number\" \n             ng-model=\"vm.resolvedData[vm.fragment]\" \n             ng-change='vm.triggerChangeEvent()' \n             ng-readonly=\"vm.uiSchema.readOnly\"/>\n    </jsonforms-control>";
 	var NumberDirective = (function () {
 	    function NumberDirective() {
@@ -55388,7 +55388,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=number.directive.js.map
 
 /***/ },
-/* 87 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55397,8 +55397,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_control_1 = __webpack_require__(81);
-	var testers_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var testers_1 = __webpack_require__(58);
 	var BooleanDirective = (function () {
 	    function BooleanDirective() {
 	        this.restrict = 'E';
@@ -55432,7 +55432,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=boolean.directive.js.map
 
 /***/ },
-/* 88 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55441,12 +55441,12 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	__webpack_require__(63);
-	var pathutil_1 = __webpack_require__(62);
-	var abstract_control_1 = __webpack_require__(81);
-	var path_resolver_1 = __webpack_require__(61);
-	var testers_1 = __webpack_require__(60);
-	var pluralize = __webpack_require__(89);
+	__webpack_require__(61);
+	var pathutil_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var path_resolver_1 = __webpack_require__(59);
+	var testers_1 = __webpack_require__(58);
+	var pluralize = __webpack_require__(87);
 	var readOnlyArrayTemplate = "\n    <jsonforms-layout>\n      <fieldset>\n        <legend>{{vm.label}}</legend>\n        <div class=\"jsf-control-array-container\">\n            <div ng-repeat='data in vm.resolvedData[vm.fragment]' class=\"jsf-control-array-element\">\n                <div ng-repeat='prop in vm.properties'>\n                <strong>{{prop | capitalize}}:</strong> {{data[prop]}}\n                </div>\n                <hr ng-show=\"!$last\">\n            </div>\n            <div ng-if=\"vm.isEmpty\" class=\"array-empty\">{{vm.emptyMsg}}</div>\n        </div>\n       </fieldset>\n     </jsonforms-layout>";
 	var ArrayReadOnlyDirective = (function () {
 	    function ArrayReadOnlyDirective() {
@@ -55550,7 +55550,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=array.directive.js.map
 
 /***/ },
-/* 89 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global define */
@@ -56012,7 +56012,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 90 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56021,9 +56021,9 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_control_1 = __webpack_require__(81);
-	var path_resolver_1 = __webpack_require__(61);
-	var testers_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var path_resolver_1 = __webpack_require__(59);
+	var testers_1 = __webpack_require__(58);
 	var ReferenceDirective = (function () {
 	    function ReferenceDirective() {
 	        this.restrict = 'E';
@@ -56076,7 +56076,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=reference.directive.js.map
 
 /***/ },
-/* 91 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56085,8 +56085,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_control_1 = __webpack_require__(81);
-	var testers_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var testers_1 = __webpack_require__(58);
 	var DateTimeDirective = (function () {
 	    function DateTimeDirective() {
 	        this.restrict = 'E';
@@ -56139,7 +56139,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=datetime.directive.js.map
 
 /***/ },
-/* 92 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56148,8 +56148,8 @@ webpackJsonp([2],Array(47).concat([
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_control_1 = __webpack_require__(81);
-	var testers_1 = __webpack_require__(60);
+	var abstract_control_1 = __webpack_require__(79);
+	var testers_1 = __webpack_require__(58);
 	var enumTemplate = "<jsonforms-control>\n      <select ng-options=\"option as option for option in vm.options\"\n              id=\"{{vm.id}}\"\n              class=\"form-control jsf-control-enum\" \n              ng-change='vm.triggerChangeEvent()'\n              ng-model=\"vm.resolvedData[vm.fragment]\"\n              ng-readonly=\"vm.uiSchema.readOnly\">\n      </select>  \n</jsonforms-control>";
 	var EnumDirective = (function () {
 	    function EnumDirective() {
@@ -56190,18 +56190,18 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=enum.directive.js.map
 
 /***/ },
-/* 93 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	__webpack_require__(56);
-	var JsonRefs = __webpack_require__(94);
-	var services_1 = __webpack_require__(75);
-	var services_2 = __webpack_require__(75);
-	var services_3 = __webpack_require__(75);
-	var services_4 = __webpack_require__(75);
-	var rule_service_1 = __webpack_require__(118);
-	var default_data_providers_1 = __webpack_require__(120);
+	__webpack_require__(54);
+	var JsonRefs = __webpack_require__(92);
+	var services_1 = __webpack_require__(73);
+	var services_2 = __webpack_require__(73);
+	var services_3 = __webpack_require__(73);
+	var services_4 = __webpack_require__(73);
+	var rule_service_1 = __webpack_require__(116);
+	var default_data_providers_1 = __webpack_require__(118);
 	var FormController = (function () {
 	    function FormController(rendererService, UISchemaRegistry, dataService, SchemaGenerator, $compile, $q, scope, timeout) {
 	        this.rendererService = rendererService;
@@ -56384,7 +56384,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=form.directive.js.map
 
 /***/ },
-/* 94 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -56420,11 +56420,11 @@ webpackJsonp([2],Array(47).concat([
 	 * @module JsonRefs
 	 */
 	
-	var path = __webpack_require__(95);
-	var PathLoader = __webpack_require__(97);
-	var qs = __webpack_require__(108);
-	var slash = __webpack_require__(111);
-	var URI = __webpack_require__(112);
+	var path = __webpack_require__(93);
+	var PathLoader = __webpack_require__(95);
+	var qs = __webpack_require__(106);
+	var slash = __webpack_require__(109);
+	var URI = __webpack_require__(110);
 	
 	var badPtrTokenRegex = /~(?:[^01]|$)/g;
 	var remoteCache = {};
@@ -56435,7 +56435,7 @@ webpackJsonp([2],Array(47).concat([
 	// Load promises polyfill if necessary
 	/* istanbul ignore if */
 	if (typeof Promise === 'undefined') {
-	  __webpack_require__(106);
+	  __webpack_require__(104);
 	}
 	
 	/* Internal Functions */
@@ -57724,7 +57724,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 95 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -57952,10 +57952,10 @@ webpackJsonp([2],Array(47).concat([
 	    }
 	;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(96)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(94)))
 
 /***/ },
-/* 96 */
+/* 94 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -58141,7 +58141,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 97 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -58177,9 +58177,9 @@ webpackJsonp([2],Array(47).concat([
 	 */
 	
 	var supportedLoaders = {
-	  file: __webpack_require__(98),
-	  http: __webpack_require__(99),
-	  https: __webpack_require__(99)
+	  file: __webpack_require__(96),
+	  http: __webpack_require__(97),
+	  https: __webpack_require__(97)
 	};
 	var defaultLoader = typeof window === 'object' || typeof importScripts === 'function' ?
 	      supportedLoaders.http :
@@ -58188,7 +58188,7 @@ webpackJsonp([2],Array(47).concat([
 	// Load promises polyfill if necessary
 	/* istanbul ignore if */
 	if (typeof Promise === 'undefined') {
-	  __webpack_require__(106);
+	  __webpack_require__(104);
 	}
 	
 	function getScheme (location) {
@@ -58376,7 +58376,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 98 */
+/* 96 */
 /***/ function(module, exports) {
 
 	/*
@@ -58431,7 +58431,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 99 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* eslint-env node, browser */
@@ -58462,7 +58462,7 @@ webpackJsonp([2],Array(47).concat([
 	
 	'use strict';
 	
-	var request = __webpack_require__(100);
+	var request = __webpack_require__(98);
 	
 	var supportedHttpMethods = ['delete', 'get', 'head', 'patch', 'post', 'put'];
 	
@@ -58533,17 +58533,17 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 100 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module dependencies.
 	 */
 	
-	var Emitter = __webpack_require__(101);
-	var reduce = __webpack_require__(102);
-	var requestBase = __webpack_require__(103);
-	var isObject = __webpack_require__(104);
+	var Emitter = __webpack_require__(99);
+	var reduce = __webpack_require__(100);
+	var requestBase = __webpack_require__(101);
+	var isObject = __webpack_require__(102);
 	
 	/**
 	 * Root reference for iframes.
@@ -58592,7 +58592,7 @@ webpackJsonp([2],Array(47).concat([
 	 * Expose `request`.
 	 */
 	
-	var request = module.exports = __webpack_require__(105).bind(null, Request);
+	var request = module.exports = __webpack_require__(103).bind(null, Request);
 	
 	/**
 	 * Determine XHR.
@@ -59616,7 +59616,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 101 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -59785,7 +59785,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 102 */
+/* 100 */
 /***/ function(module, exports) {
 
 	
@@ -59814,13 +59814,13 @@ webpackJsonp([2],Array(47).concat([
 	};
 
 /***/ },
-/* 103 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module of mixed-in functions shared between node and client code
 	 */
-	var isObject = __webpack_require__(104);
+	var isObject = __webpack_require__(102);
 	
 	/**
 	 * Clear previous timeout.
@@ -59986,7 +59986,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 104 */
+/* 102 */
 /***/ function(module, exports) {
 
 	/**
@@ -60005,7 +60005,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 105 */
+/* 103 */
 /***/ function(module, exports) {
 
 	// The node and browser modules expose versions of this with the
@@ -60043,7 +60043,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 106 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*! Native Promise Only
@@ -60420,13 +60420,13 @@ webpackJsonp([2],Array(47).concat([
 		return Promise;
 	});
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(107).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(105).setImmediate))
 
 /***/ },
-/* 107 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(96).nextTick;
+	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(94).nextTick;
 	var apply = Function.prototype.apply;
 	var slice = Array.prototype.slice;
 	var immediateIds = {};
@@ -60502,20 +60502,20 @@ webpackJsonp([2],Array(47).concat([
 	exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
 	  delete immediateIds[id];
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(107).setImmediate, __webpack_require__(107).clearImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(105).setImmediate, __webpack_require__(105).clearImmediate))
 
 /***/ },
-/* 108 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	exports.decode = exports.parse = __webpack_require__(109);
-	exports.encode = exports.stringify = __webpack_require__(110);
+	exports.decode = exports.parse = __webpack_require__(107);
+	exports.encode = exports.stringify = __webpack_require__(108);
 
 
 /***/ },
-/* 109 */
+/* 107 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -60601,7 +60601,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 110 */
+/* 108 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -60671,7 +60671,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 111 */
+/* 109 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -60688,7 +60688,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 112 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -61185,14 +61185,14 @@ webpackJsonp([2],Array(47).concat([
 	    };
 	})();
 	if (!COMPILED && typeof module !== "undefined" && "function" === "function") {
-	    var punycode = __webpack_require__(113);
+	    var punycode = __webpack_require__(111);
 	    module.exports = URI;
-	    __webpack_require__(114);
+	    __webpack_require__(112);
 	}
 
 
 /***/ },
-/* 113 */
+/* 111 */
 /***/ function(module, exports) {
 
 	/*! https://mths.be/punycode v1.3.2 by @mathias, modified for URI.js */
@@ -61694,22 +61694,22 @@ webpackJsonp([2],Array(47).concat([
 	if (typeof COMPILED === "undefined" && typeof module !== "undefined") module.exports = punycode;
 
 /***/ },
-/* 114 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///<reference path="commonjs.d.ts"/>
+	__webpack_require__(113);
+	__webpack_require__(114);
 	__webpack_require__(115);
-	__webpack_require__(116);
-	__webpack_require__(117);
 
 
 /***/ },
-/* 115 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///<reference path="../uri.ts"/>
 	if (typeof COMPILED === "undefined" && typeof URI === "undefined" && "function" === "function")
-	    var URI = __webpack_require__(112);
+	    var URI = __webpack_require__(110);
 	URI.SCHEMES["http"] = URI.SCHEMES["https"] = {
 	    domainHost: true,
 	    parse: function (components, options) {
@@ -61737,12 +61737,12 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 116 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///<reference path="../uri.ts"/>
 	if (typeof COMPILED === "undefined" && typeof URI === "undefined" && "function" === "function")
-	    var URI = __webpack_require__(112);
+	    var URI = __webpack_require__(110);
 	(function () {
 	    var pctEncChar = URI.pctEncChar, NID$ = "(?:[0-9A-Za-z][0-9A-Za-z\\-]{1,31})", PCT_ENCODED$ = "(?:\\%[0-9A-Fa-f]{2})", TRANS$$ = "[0-9A-Za-z\\(\\)\\+\\,\\-\\.\\:\\=\\@\\;\\$\\_\\!\\*\\'\\/\\?\\#]", NSS$ = "(?:(?:" + PCT_ENCODED$ + "|" + TRANS$$ + ")+)", URN_SCHEME = new RegExp("^urn\\:(" + NID$ + ")$"), URN_PATH = new RegExp("^(" + NID$ + ")\\:(" + NSS$ + ")$"), URN_PARSE = /^([^\:]+)\:(.*)/, URN_EXCLUDED = /[\x00-\x20\\\"\&\<\>\[\]\^\`\{\|\}\~\x7F-\xFF]/g, UUID = /^[0-9A-Fa-f]{8}(?:\-[0-9A-Fa-f]{4}){3}\-[0-9A-Fa-f]{12}$/;
 	    //RFC 2141
@@ -61816,12 +61816,12 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 117 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///<reference path="../uri.ts"/>
 	if (typeof COMPILED === "undefined" && typeof URI === "undefined" && "function" === "function") {
-	    var URI = __webpack_require__(112), punycode = __webpack_require__(113);
+	    var URI = __webpack_require__(110), punycode = __webpack_require__(111);
 	}
 	(function () {
 	    function merge() {
@@ -61979,13 +61979,13 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 118 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var services_1 = __webpack_require__(75);
-	var uischema_1 = __webpack_require__(119);
-	var path_resolver_1 = __webpack_require__(61);
+	var services_1 = __webpack_require__(73);
+	var uischema_1 = __webpack_require__(117);
+	var path_resolver_1 = __webpack_require__(59);
 	var RuleService = (function () {
 	    function RuleService() {
 	        this.map = {};
@@ -62030,7 +62030,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=rule-service.js.map
 
 /***/ },
-/* 119 */
+/* 117 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -62044,11 +62044,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=uischema.js.map
 
 /***/ },
-/* 120 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var services_1 = __webpack_require__(75);
+	var services_1 = __webpack_require__(73);
 	var DataProviders = (function () {
 	    function DataProviders() {
 	    }
@@ -62134,7 +62134,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=default-data-providers.js.map
 
 /***/ },
-/* 121 */
+/* 119 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -62163,15 +62163,15 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=norenderer-directive.js.map
 
 /***/ },
-/* 122 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ui_schema_registry_service_1 = __webpack_require__(66);
-	var path_resolver_service_1 = __webpack_require__(65);
-	var label_service_1 = __webpack_require__(123);
-	var capitalize_filter_1 = __webpack_require__(124);
-	var services_1 = __webpack_require__(75);
+	var ui_schema_registry_service_1 = __webpack_require__(64);
+	var path_resolver_service_1 = __webpack_require__(63);
+	var label_service_1 = __webpack_require__(121);
+	var capitalize_filter_1 = __webpack_require__(122);
+	var services_1 = __webpack_require__(73);
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = angular.module('jsonforms.services', [
 	    ui_schema_registry_service_1.default,
@@ -62190,11 +62190,11 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=ng-services.js.map
 
 /***/ },
-/* 123 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var Labels_1 = __webpack_require__(79);
+	var Labels_1 = __webpack_require__(77);
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = angular
 	    .module('jsonforms.service.label', [])
@@ -62203,7 +62203,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=label.service.js.map
 
 /***/ },
-/* 124 */
+/* 122 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -62216,7 +62216,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=capitalize.filter.js.map
 
 /***/ },
-/* 125 */
+/* 123 */
 /***/ function(module, exports) {
 
 	/*!
@@ -62430,26 +62430,26 @@ webpackJsonp([2],Array(47).concat([
 	}());
 
 /***/ },
-/* 126 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	__webpack_require__(56);
+	__webpack_require__(54);
+	__webpack_require__(125);
 	__webpack_require__(127);
-	__webpack_require__(129);
-	var md_array_template_1 = __webpack_require__(131);
-	var md_boolean_template_1 = __webpack_require__(132);
-	var md_datetime_template_1 = __webpack_require__(133);
-	var md_enum_template_1 = __webpack_require__(134);
-	var md_integer_template_1 = __webpack_require__(135);
-	var md_number_template_1 = __webpack_require__(136);
-	var md_string_template_1 = __webpack_require__(137);
-	var md_control_template_1 = __webpack_require__(138);
-	var md_categorization_template_1 = __webpack_require__(139);
-	var md_vertical_template_1 = __webpack_require__(140);
-	var md_horizontal_template_1 = __webpack_require__(141);
-	var md_group_template_1 = __webpack_require__(142);
-	var md_layout_template_1 = __webpack_require__(143);
+	var md_array_template_1 = __webpack_require__(129);
+	var md_boolean_template_1 = __webpack_require__(130);
+	var md_datetime_template_1 = __webpack_require__(131);
+	var md_enum_template_1 = __webpack_require__(132);
+	var md_integer_template_1 = __webpack_require__(133);
+	var md_number_template_1 = __webpack_require__(134);
+	var md_string_template_1 = __webpack_require__(135);
+	var md_control_template_1 = __webpack_require__(136);
+	var md_categorization_template_1 = __webpack_require__(137);
+	var md_vertical_template_1 = __webpack_require__(138);
+	var md_horizontal_template_1 = __webpack_require__(139);
+	var md_group_template_1 = __webpack_require__(140);
+	var md_layout_template_1 = __webpack_require__(141);
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = angular.module('jsonforms-material', [
 	    'ngMaterial',
@@ -62472,25 +62472,25 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=jsonforms-material.js.map
 
 /***/ },
-/* 127 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Should already be required, here for clarity
-	__webpack_require__(56);
+	__webpack_require__(54);
 	
 	// Load Angular and dependent libs
 	__webpack_require__(15);
 	__webpack_require__(17);
 	
 	// Now load Angular Material
-	__webpack_require__(128);
+	__webpack_require__(126);
 	
 	// Export namespace
 	module.exports = 'ngMaterial';
 
 
 /***/ },
-/* 128 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/*!
@@ -94771,13 +94771,13 @@ webpackJsonp([2],Array(47).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14)))
 
 /***/ },
-/* 129 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(130);
+	var content = __webpack_require__(128);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -94797,7 +94797,7 @@ webpackJsonp([2],Array(47).concat([
 	}
 
 /***/ },
-/* 130 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -94811,7 +94811,7 @@ webpackJsonp([2],Array(47).concat([
 
 
 /***/ },
-/* 131 */
+/* 129 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94825,7 +94825,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-array.template.js.map
 
 /***/ },
-/* 132 */
+/* 130 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94840,7 +94840,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-boolean.template.js.map
 
 /***/ },
-/* 133 */
+/* 131 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94855,7 +94855,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-datetime.template.js.map
 
 /***/ },
-/* 134 */
+/* 132 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94870,7 +94870,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-enum.template.js.map
 
 /***/ },
-/* 135 */
+/* 133 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94885,7 +94885,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-integer.template.js.map
 
 /***/ },
-/* 136 */
+/* 134 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94900,7 +94900,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-number.template.js.map
 
 /***/ },
-/* 137 */
+/* 135 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94915,7 +94915,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-string.template.js.map
 
 /***/ },
-/* 138 */
+/* 136 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94930,7 +94930,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-control.template.js.map
 
 /***/ },
-/* 139 */
+/* 137 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94944,7 +94944,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-categorization.template.js.map
 
 /***/ },
-/* 140 */
+/* 138 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94959,7 +94959,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-vertical.template.js.map
 
 /***/ },
-/* 141 */
+/* 139 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94974,7 +94974,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-horizontal.template.js.map
 
 /***/ },
-/* 142 */
+/* 140 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94989,7 +94989,7 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-group.template.js.map
 
 /***/ },
-/* 143 */
+/* 141 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -95004,6 +95004,8 @@ webpackJsonp([2],Array(47).concat([
 	//# sourceMappingURL=md-layout.template.js.map
 
 /***/ },
+/* 142 */,
+/* 143 */,
 /* 144 */,
 /* 145 */,
 /* 146 */,
@@ -95026,22 +95028,20 @@ webpackJsonp([2],Array(47).concat([
 /* 163 */,
 /* 164 */,
 /* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	__webpack_require__(169);
-	__webpack_require__(170);
+	__webpack_require__(167);
+	__webpack_require__(168);
 	
 	angular.module('listing', []);
 	
 
 
 /***/ },
-/* 169 */
+/* 167 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -95073,7 +95073,7 @@ webpackJsonp([2],Array(47).concat([
 	});
 
 /***/ },
-/* 170 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -95120,7 +95120,7 @@ webpackJsonp([2],Array(47).concat([
 	            data: "=",
 	            text: '='
 	        },
-	        template: __webpack_require__(171),
+	        template: __webpack_require__(169),
 	        link: function(scope, el, attr, ctrl, transclude) {
 	            ctrl.registerStates();
 	            Prism.highlightAll(); // Only this that you need do!
@@ -95181,12 +95181,14 @@ webpackJsonp([2],Array(47).concat([
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14)))
 
 /***/ },
-/* 171 */
+/* 169 */
 /***/ function(module, exports) {
 
 	module.exports = "<md-tabs md-dynamic-height md-border-bottom>\n    <md-tab label=\"Rendered Form\" id=\"form-{{vm.nth}}\">\n        <md-content class=\"md-padding\">\n            <jsonforms schema=\"vm.schema\" uischema=\"vm.uischema\" data=\"vm.getData\"></jsonforms>\n        </md-content>\n    </md-tab>\n    <md-tab  label=\"Schema\" id=\"schema-{{vm.nth}}\">\n        <pre nag-prism source=\"{{vm.schema | json}}\" class=\"language-css\"></pre>    </md-tab>\n    <md-tab label=\"UI Schema\" id=\"uischema-{{vm.nth}}\">\n        <pre nag-prism source=\"{{vm.uischema | json}}\" class=\"language-css\"></pre>\n\n    </md-tab>\n    <md-tab label=\"Data\" id=\"data-{{vm.nth}}\">\n        <pre nag-prism class=\"language-json\" source=\"{{vm.data | json}}\"></pre>\n    </md-tab>\n    <md-tab label=\"HTML\" id=\"data-{{vm.nth}}\">\n        <pre nag-prism class=\"language-html\" source=\"<jsonforms schema='vm.schema' uischema='vm.uischema' data='vm.getData'></jsonforms>\"></pre>\n    </md-tab>\n</md-tabs>\n"
 
 /***/ },
+/* 170 */,
+/* 171 */,
 /* 172 */,
 /* 173 */,
 /* 174 */,
@@ -95202,27 +95204,29 @@ webpackJsonp([2],Array(47).concat([
 /* 184 */,
 /* 185 */,
 /* 186 */,
-/* 187 */
+/* 187 */,
+/* 188 */,
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
+	__webpack_require__(45);
+	__webpack_require__(46);
 	__webpack_require__(47);
-	__webpack_require__(48);
+	
 	__webpack_require__(49);
-	
 	__webpack_require__(51);
+	
 	__webpack_require__(53);
+	__webpack_require__(124);
 	
-	__webpack_require__(55);
-	__webpack_require__(126);
-	
-	__webpack_require__(188);
+	__webpack_require__(190);
 	
 	angular.module('docs', []);
 
 /***/ },
-/* 188 */
+/* 190 */
 /***/ function(module, exports) {
 
 	'use strict';
