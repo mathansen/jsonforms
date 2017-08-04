@@ -60,6 +60,12 @@ export interface StylingRegistry {
      *         empty string otherwise
      */
     getAsClassName(styleName: string): string;
+
+    /**
+     * Apply the registered styles to the given HTML element.
+     * @param {HTMLElement} element the HTML element to apply styles to
+     */
+    applyStyles(styleName: string, element: HTMLElement);
 }
 
 /**
@@ -109,5 +115,15 @@ export class StylingRegistryImpl implements StylingRegistry {
         }
 
         return _.join(styles, ' ');
+    }
+
+    applyStyles(styleName: string, element: HTMLElement) {
+        const registeredStyles = this.get(styleName);
+        if (_.isEmpty(registeredStyles)) {
+            return '';
+        }
+
+        const assignedStyles = element.className.split(' ');
+        element.className = _.join(assignedStyles.concat(registeredStyles), ' ');
     }
 }

@@ -36,9 +36,7 @@ export abstract class BaseControl <T extends HTMLElement>
   render(): HTMLElement {
     const controlElement = this.uischema as ControlElement;
     this.createLabel(controlElement);
-    this.label.className = JsonForms.stylingRegistry.getAsClassName('control.label');
     this.createInput(controlElement);
-    this.input.className = JsonForms.stylingRegistry.getAsClassName('control.input');
     this.errorElement = document.createElement('div');
     this.errorElement.className = JsonForms.stylingRegistry.getAsClassName('control.validation');
     this.appendChild(this.label);
@@ -65,7 +63,7 @@ export abstract class BaseControl <T extends HTMLElement>
     switch (type) {
       case RUNTIME_TYPE.VALIDATION_ERROR:
         this.errorElement.textContent = BaseControl.formatErrorMessage(runtime.validationErrors);
-        this.classList.toggle('validation_error', runtime.validationErrors !== undefined);
+        this.classList.toggle(this.getStyles('validation.error'), runtime.validationErrors !== undefined);
         break;
       case RUNTIME_TYPE.VISIBLE:
         this.hidden = !runtime.visible;
@@ -170,12 +168,33 @@ export abstract class BaseControl <T extends HTMLElement>
    */
   protected abstract createInputElement(): T;
 
+  /**
+   * Get a concatenated string of registered CSS styles for the given styleName.
+   *
+   * @param {string} styleName the style
+   * @returns {string} a concatenated string CSS styles
+   */
+  protected getStyles(styleName: string): string {
+    return JsonForms.stylingRegistry.getAsClassName(styleName);
+  }
+
+  /**
+   * Apply all registered styles on the given HTML element.
+   *
+   * @param {string} styleName the style
+   * @param {HTMLElement} element the element to apply styles on
+   */
+  protected applyStyles(styleName: string, element: HTMLElement) {
+    JsonForms.stylingRegistry.applyStyles(styleName, element);
+  }
+
   private createLabel(controlElement: ControlElement): void {
     this.label = document.createElement('label');
     const labelObject = getElementLabelObject(this.dataSchema, controlElement);
     if (labelObject.show) {
       this.label.textContent = labelObject.text;
     }
+    this.applyStyles('control.label', this.label);
   }
 
   private createInput(controlElement: ControlElement): void {
@@ -186,6 +205,7 @@ export abstract class BaseControl <T extends HTMLElement>
         }
     );
     this.setValue(this.input, this.dataService.getValue(controlElement));
+    this.applyStyles('control.input', this.label);
   }
 
   private getValue(input: T): any {
@@ -195,4 +215,5 @@ export abstract class BaseControl <T extends HTMLElement>
   private setValue(input: T, value: any): void {
     input[this.valueProperty] = this.convertModelValue(value);
   }
+
 }
