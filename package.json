@@ -1,5 +1,6 @@
 {
 	"scripts": {
+		"postinstall": "cd packages; (cd core && npm install); (cd vanilla && npm install); (cd react && npm install); (cd angular && npm install); (cd material && npm install); (cd angular-material && npm install); (cd webcomponent && npm install); (cd editor && npm install);",
 		"lerna": "lerna",
 		"preparePublish": "lerna run clean && lerna run build && lerna run doc && lerna run bundle && lerna run test",
 		"merge-report": "mkdir -p coverage && lcov-result-merger 'packages/**/coverage/lcov.info' 'coverage/lcov.info'"
@@ -26,5 +27,8 @@
 		"webpack": "^3.10.0",
 		"webpack-merge": "^4.1.1"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"@angular/core": "^5.2.10",
+		"npm": "^6.0.0"
+	}
 }
