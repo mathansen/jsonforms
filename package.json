@@ -30,15 +30,15 @@
     "start-placeholder": "node_modules/.bin/json-server examples/assets/db.json"
   },
   "dependencies": {
-    "angular": "1.5.8",
+    "angular": "1.6.9",
     "angular-animate": "1.5.8",
     "angular-aria": "1.5.8",
     "angular-material": "1.1.0",
     "angular-ui-bootstrap": "1.3.2",
     "angular-ui-validate": "1.2.2",
-    "jquery": "2.2.0",
-    "json-refs": "2.1.5",
-    "lodash": "4.0.1",
+    "jquery": "3.0.0",
+    "json-refs": "2.1.7",
+    "lodash": "4.17.5",
     "pluralize": "3.0.0",
     "ajv": "4.7.7"
   },
